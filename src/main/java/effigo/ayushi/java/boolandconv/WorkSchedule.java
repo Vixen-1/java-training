@@ -1,4 +1,4 @@
-package effigo.ayushi.boolandconv;
+package effigo.ayushi.java.boolandconv;
 
 
 public class WorkSchedule {
