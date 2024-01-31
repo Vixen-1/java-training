@@ -1,3 +1,51 @@
-.classpath
-.class
+# Maven specific
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# IDE files
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws
+*.classpath
+*.project
+*.settings/
+
+# Compiled Java classes
+*.class
+
+# Compiled Maven files
+maven-archiver/
+
+# Logs
+log/
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Dependency directories
+lib/
+dependency/
+
+# Eclipse specific files
+*.cache
+*.tmp
+*.tmp/*
+*.bak
+*.swp
+*~
+
+# IntelliJ specific files
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# NetBeans specific files
+nbproject/private
+
 
