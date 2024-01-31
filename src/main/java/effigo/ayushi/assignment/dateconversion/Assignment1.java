@@ -1,4 +1,4 @@
-package effigo.ayushi.java.assignment.dateconversion;
+package effigo.ayushi.assignment.dateconversion;
 
 
 
