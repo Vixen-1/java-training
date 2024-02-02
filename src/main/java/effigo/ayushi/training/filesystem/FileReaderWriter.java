@@ -22,22 +22,27 @@ public class FileReaderWriter {
 			}
 			System.out.println("Enter the string you want to add to the file: ");
 			String str = scan.nextLine();
-			try {
-				
-			FileWriter fileWriter = new FileWriter(file);
-			fileWriter.write(str);
+			try(FileWriter fileWriter = new FileWriter(file) ){
+				fileWriter.write(str);
+				fileWriter.close();
+			}
 			System.out.println("Data is written to the file.");
-			fileWriter.close();
-			}
-			catch(Exception e) {
-				System.out.println(e.getMessage());
-			}
+			System.out.println();
+			
 			System.out.println("Lets display whats inside the file.");
 			char[] string = new char[100];
 			try (FileReader fileReader = new FileReader(file)) {
 					fileReader.read(string);
 				}
-				System.out.println(string);
+			System.out.println(string);
+				
+			boolean res = file.delete();
+			if(res) {
+				System.out.println("File is deleted");
+			}
+			else {
+				System.out.println("File is not deleted");
+			}
 		}
 		catch(Exception e) {
 				e.printStackTrace();
