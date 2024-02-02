@@ -25,7 +25,7 @@ public class Employe {
 	
 	@Override
 	public int hashCode() {
-		return this.name.length();
+		return Objects.hash(name);
 	}
 	
 	@Override

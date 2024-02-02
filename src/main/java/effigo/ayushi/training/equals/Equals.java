@@ -12,5 +12,10 @@ public class Equals {
 		System.out.println(emp1.equals(emp3));
 		System.out.println(emp4.equals(emp2));
 		
+		System.out.println("emp1 hashcode: " + emp1.hashCode());
+		System.out.println("emp2 hashcode: " + emp2.hashCode());
+		System.out.println("emp3 hashcode: " + emp3.hashCode());
+		System.out.println("emp4 hashcode: " + emp4.hashCode());
+		
 	}
 }

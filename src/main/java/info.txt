@@ -1,0 +1,5 @@
+static - it means that function or variable belong to that class only and can be accessed directly.
+
+final - it means its value once initialized cannot be changed.
+
+enum - when for a certain variable we want only specific value no other than that then we use enum. ex: 'public enum trafficLight {Red, Yellow, Green}' so it wont accept any value other than this.
